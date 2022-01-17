@@ -9,6 +9,8 @@ Player stats were gathered via web-scraping and amounted to approximately 109 th
 
 Several different Machine Learning models were trained and tested using the gathered data, with a Random Forest Classifier Model showing the best results. 
 
+[![webpagesample](/PNGs/bb_scrnsht.png)](https://kellnergp.github.io/Draft_Prediction_Project/)
+
 ## Tools Used
 
 Python
