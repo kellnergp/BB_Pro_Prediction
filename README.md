@@ -3,7 +3,11 @@
 https://deepzissou.github.io/Draft_Prediction_Project/
 
 ## Overview
-Develop a Machine Learning model to predict if a basketball player will go professional based on their player stats.
+The focus of this project was to use Python to develop Machine Learning Models that use historical NCAA player stats to predict if a player is likely to play Basketball professionally.
+
+Player stats were gathered via web-scraping and amounted to approximately 109 thousand unique records.
+
+Several different Machine Learning models were trained and tested using the gathered data, with a Random Forest Classifier Model showing the best results. 
 
 ## Data Collection – Finding Big Data
 Web-scraping code was used to scrape data from the site Sports Reference https://www.sports-reference.com/.  The code was specified to pull data for eleven key player stat parameters: 
@@ -13,7 +17,8 @@ Web-scraping code was used to scrape data from the site Sports Reference https:/
 * ### ftapg = Free throw attempts per game
 * ### ftpct = Free throw percent
 * ### ftpg = Free throws per game
-* ### height = Player height
+* ### games = Total Games Played over the course of NCAA career
+* ### height = Player height in inches
 * ### pfpg = Personal fouls per game
 * ### ptspg = Points per game
 * ### sospg = Strength of schedule
