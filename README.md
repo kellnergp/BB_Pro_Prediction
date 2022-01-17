@@ -48,5 +48,15 @@ The “test” dataset was used to test the predictability of our model.  The kn
 
 ## Results
 The outputs of the model were combined with the known results into a dataframe and saved to the file randomForest_model_results.csv.
+
+## Contacts
+
+Marisa Kiger: marisa_krg@yahoo.com
+
+Galen Kellner: kellnergp@gmail.com
+
+Thomas Martin: thomas.martin321@gmail.com
+
+Dwayne Jordan: https://github.com/deepzissou
 ## Our model resulted with a 96.7% prediction accuracy.
 
