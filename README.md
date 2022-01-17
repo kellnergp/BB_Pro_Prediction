@@ -9,6 +9,16 @@ Player stats were gathered via web-scraping and amounted to approximately 109 th
 
 Several different Machine Learning models were trained and tested using the gathered data, with a Random Forest Classifier Model showing the best results. 
 
+## Tools Used
+
+Python
+
+BeautifulSoup
+
+Scikit-learn
+
+PostgreSQL
+
 ## Data Collection – Finding Big Data
 Web-scraping code was used to scrape data from the site Sports Reference https://www.sports-reference.com/.  The code was specified to pull data for eleven key player stat parameters: 
 * ### fgapg = Field goal attempts per game
