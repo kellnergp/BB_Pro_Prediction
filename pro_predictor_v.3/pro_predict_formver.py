@@ -7,19 +7,19 @@ from sklearn.ensemble import RandomForestClassifier
 # define a function that accepts the form dictionary as an input
 def predict_from_form(form_data):
     # pull out each value from the input dictionary into its own variable
-    name = form_data.name
-    fgapg = form_data.fgapg
-    fgpct = form_data.fgpct
-    fgpg = form_data.fgpg
-    ftapg = form_data.ftapg
-    ftpct = form_data.ftpct
-    ftpg = form_data.ftpg
-    games = form_data.games
-    height = form_data.height
-    pfpg = form_data.pfpg
-    ptspg = form_data.ptspg
-    sospg = form_data.sospg
-    trbpg = form_data.trbpg
+    name = form_data['name']
+    fgapg = form_data['fgapg']
+    fgpct = form_data['fgpct']
+    fgpg = form_data['fgpg']
+    ftapg = form_data['ftapg']
+    ftpct = form_data['ftpct']
+    ftpg = form_data['ftpg']
+    games = form_data['games']
+    height = form_data['height']
+    pfpg = form_data['pfpg']
+    ptspg = form_data['ptspg']
+    sospg = form_data['sospg']
+    trbpg = form_data['trbpg']
 
     # import the saved rfc model
     model = load('pro_predict_model.joblib')

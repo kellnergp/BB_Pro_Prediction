@@ -1,5 +1,5 @@
 # import dependencies
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request, redirect
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from joblib import dump, load
@@ -7,6 +7,10 @@ from sklearn.ensemble import RandomForestClassifier
 import pro_predict_formver
  
 app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return redirect('/form')
  
 @app.route('/form')
 def form():
@@ -18,7 +22,7 @@ def data():
         return f"The URL /data is not accessed directly. Try going to '/form' to submit form"
     if request.method == 'POST':
         # access the input values from the form
-        form_data = request.form
+        form_data = request.form.to_dict()
 
         # run the dictionary from the form through the modeling function
         response_string = pro_predict_formver.predict_from_form(form_data)
